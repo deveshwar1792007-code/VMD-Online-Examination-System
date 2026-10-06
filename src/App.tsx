@@ -49,44 +49,6 @@ const subjects = [
   "Computer Organization and Architecture",
 ];
 
-const initialExams = [
-  {
-    id: 1,
-    title: "Data Structures Fundamentals",
-    subject: "Data Structures Fundamentals",
-    questions: 20,
-    duration: 30,
-  },
-  {
-    id: 2,
-    title: "Operating Systems",
-    subject: "Operating Systems",
-    questions: 20,
-    duration: 30,
-  },
-  {
-    id: 3,
-    title: "Advanced Programming Practice",
-    subject: "Advanced Programming",
-    questions: 20,
-    duration: 30,
-  },
-  {
-    id: 4,
-    title: "Mathematical Transforms and Boundary Value Problems",
-    subject: "Mathematical Transforms and Boundary Value Problems",
-    questions: 20,
-    duration: 30,
-  },
-  {
-    id: 5,
-    title: "Computer Organization and Architecture",
-    subject: "Computer Organization and Architecture",
-    questions: 20,
-    duration: 30,
-  },
-];
-
 function App() {
   const [role, setRole] = useState<"student" | "teacher" | null>(null);
 
@@ -1206,15 +1168,6 @@ function StudentDashboard({
             (sum, result) => sum + result.percentage,
             0
           ) / results.length
-        )
-      : 0;
-
-  const highestScore =
-    results.length > 0
-      ? Math.max(
-          ...results.map(
-            (result) => result.percentage
-          )
         )
       : 0;
 
