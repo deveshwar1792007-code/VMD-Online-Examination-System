@@ -4,7 +4,6 @@ import {
   BarChart3,
   BookOpen,
   CheckCircle,
-  Clock,
   FileText,
   GraduationCap,
   LogIn,
@@ -13,7 +12,6 @@ import {
   Sparkles,
   User,
   Users,
-  XCircle,
 } from "lucide-react";
 
 type Question = {
